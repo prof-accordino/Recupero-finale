@@ -76,6 +76,8 @@ public class Finestra extends JFrame {
                 }
             }, 0, 1000/fps, TimeUnit.MILLISECONDS);
         }
+        imagePanel.setPreferredSize(new Dimension(immagine[0].length, immagine.length));
+        pack();
     }
 
     // Metodo per disegnare il fotogramma successivo
